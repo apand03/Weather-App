@@ -15,4 +15,4 @@ export const tempEl = document.querySelectorAll(".forecast__temp");
 
 export const API_KEY = "84889561643c4353874150352221704";
 
-export const BASE_URL = "http://api.weatherapi.com/v1";
+export const BASE_URL = "https://api.weatherapi.com/v1";
