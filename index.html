@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./public/dist/css/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container flex__md">
+                <form class="header__form ta__sm__center">
+                    <input
+                        type="text"
+                        name="search"
+                        id="search"
+                        placeholder="Search a city"
+                        class="search ta__sm__center"
+                    />
+                </form>
+                <h2 class="header__city city-title ta__sm__center">
+                    Weather in <span class="header__city--title">Mumbai</span>
+                    <span class="location"
+                        ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                </h2>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <article class="weather">
+                    <div class="weather__main flex flex__jcsa flex__aic">
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="weather__main--icon"
+                        ></ion-icon>
+                        <p class="weather__main--temp">23&deg;</p>
+                        <div class="weather__main--info">
+                            <span class="icon__free"
+                                ><i
+                                    class="fa-solid fa-tornado icon__free--icon"
+                                ></i>
+                                <span class="icon__free--info wind__main"
+                                    >1.2
+                                    <span class="icon__free--info-sm"
+                                        >mm</span
+                                    ></span
+                                >
+                            </span>
+                            <span class="icon__free"
+                                ><i
+                                    class="fa-solid fa-feather icon__free--icon"
+                                ></i>
+                                <span class="icon__free--info velocity__main"
+                                    >10
+                                    <span class="icon__free--info-sm"
+                                        >m/s</span
+                                    ></span
+                                ></span
+                            >
+                            <span class="icon__free">
+                                <i
+                                    class="fa-solid fa-wind icon__free--icon"
+                                ></i>
+                                <span class="icon__free--info humidity__main"
+                                    >87
+                                    <span class="icon__free--info-sm"
+                                        >%</span
+                                    ></span
+                                ></span
+                            >
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="meta-weather">
+            <div class="container">
+                <div class="meta-container">
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                    <article
+                        class="forecast flex flex__jcsa flex__aic flex__gap10"
+                    >
+                        <h4 class="forecast__time">15:00</h4>
+                        <ion-icon
+                            name="thunderstorm-outline"
+                            class="forecast__icon"
+                        ></ion-icon>
+                        <span class="forecast__temp">21&deg;</span>
+                        <span class="wind">1.2 mm</span>
+                        <span class="velocity">11 m/s</span>
+                        <span class="humidity">60%</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <script src="./public/src/js/app.js" type="module"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>

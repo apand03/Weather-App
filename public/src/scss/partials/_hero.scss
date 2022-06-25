@@ -1,0 +1,118 @@
+//*** Header ***//
+
+.header {
+    padding-block: 2rem;
+
+    @include breakpoint-up(md) {
+        padding-inline: 2rem;
+    }
+
+    &__container {
+        margin-inline: auto;
+    }
+
+    &__form {
+        @include breakpoint-up(md) {
+            order: 2;
+        }
+    }
+
+    &__city {
+        font-weight: 500;
+        padding-top: 1.5rem;
+        color: $clr-white-70;
+        font-size: 1rem;
+
+        @include breakpoint-up(md) {
+            padding-top: initial;
+        }
+
+        .fa-location-dot {
+            color: $clr-red;
+            font-size: 0.6rem;
+        }
+    }
+}
+
+.search {
+    padding: 0.5rem;
+    background-color: $clr-white;
+    border-radius: 3rem;
+    font-size: 0.9rem;
+
+    &::placeholder {
+        opacity: 0.35;
+    }
+}
+
+//*** Hero ***//
+
+.weather {
+    padding-block: 1.5rem;
+    // outline: 1px solid red;
+}
+
+.weather__main {
+    color: $clr-white;
+
+    &--icon {
+        font-size: 2.5rem;
+
+        @include breakpoint-up(md) {
+            font-size: 5rem;
+        }
+
+        @include breakpoint-up(lg) {
+            font-size: 5.5rem;
+        }
+    }
+
+    &--temp {
+        font-size: 3rem;
+
+        @include breakpoint-up(md) {
+            font-size: 9rem;
+            margin-top: -2rem;
+        }
+    }
+}
+
+.icon__free {
+    @include breakpoint-up(md) {
+        &:not(:last-of-type) {
+            padding-bottom: 0.6rem;
+        }
+    }
+
+    &--icon {
+        @include breakpoint-up(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &--info {
+        padding-left: 0.5rem;
+        font-weight: 500;
+        color: $clr-white;
+        font-size: 1.2rem;
+
+        &-sm {
+            font-size: 0.75rem;
+            color: $clr-white-70;
+            font-weight: 600;
+            letter-spacing: 0.06rem;
+        }
+    }
+}
+
+.fa-wind {
+    color: $clr-blue;
+}
+
+.fa-feather {
+    color: $clr-red;
+}
+
+.fa-tornado {
+    color: $clr-white;
+}

@@ -1,0 +1,27 @@
+.meta-container {
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.forecast {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    color: $clr-white;
+    font-size: 0.8rem;
+
+    @include breakpoint-up(md) {
+        font-size: 1rem;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 90%;
+        height: 2%;
+        background-color: $clr-white-70;
+        top: 0;
+        left: 5%;
+        opacity: 0.3;
+        border-radius: 50%;
+    }
+}

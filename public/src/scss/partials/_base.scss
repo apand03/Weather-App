@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+    font-size: 125%; /*20px*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $ff-primary;
+    line-height: 1.5;
+    background-color: $clr-bg;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+input,
+button {
+    font-family: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.weather.fade-in {
+    transition: all 2s linear;
+}
